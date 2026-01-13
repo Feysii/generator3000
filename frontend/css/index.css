@@ -6,7 +6,7 @@
 }
 
 body {
-	background: linear-gradient(135deg, #66eae3 0%, #864ba2 100%);
+	background: linear-gradient(135deg, #e2acac 0%, #c28686 20%);
 	background-size: state 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -318,3 +318,4 @@ body {
 	border-radius: 5px;
 
 }
+
