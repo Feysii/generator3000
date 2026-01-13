@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>История генераций</title>
+	<link rel="stylesheet" href="frontend/css/acc.css">
+</head>
+
+<body>
+
+	<div class="history-container">
+		<div class="header">
+			<h1 class="history-title">История генераций</h1>
+			<div>
+				<button class="back-btn" onclick="location.href='index.html'">↩️</button>
+				<button class="clear-btn" onclick="clearHistory()">🗑️</button>
+			</div>
+		</div>
+
+		<div class="debug-info" id="debug-info" style="display: none;">
+
+		</div>
+
+		<div class="stats" id="stats"></div>
+
+		<div class="filters-bar" id="filters-bar">
+			<div class="filter-group">
+				<label>Тип генерации:</label>
+				<select id="filter-type" onchange="applyFilters()">
+					<option value="all">Все типы</option>
+					<option value="password">Пароль</option>
+					<option value="nickname">Никнейм</option>
+					<option value="number">Число</option>
+					<option value="coordinate">Координаты</option>
+					<option value="date">Идея для свидания</option>
+				</select>
+			</div>
+
+			<div class="filter-group">
+				<label>Сортировка:</label>
+				<select id="filter-date" onchange="applyFilters()">
+					<option value="new">Новые</option>
+					<option value="old">Старые</option>
+				</select>
+			</div>
+			<button class="reset-filters-btn" onclick="resetFilters()">🔄</button>
+		</div>
+
+		<div id="history-list"></div>
+	</div>
+
+</body>
+<script src="frontend/js/acc.js"></script>
+
+</html>

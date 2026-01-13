@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Генератор3000</title>
+	<link rel="stylesheet" href="frontend/css/index.css">
+</head>
+
+<body>
+
+	<button class="acc" onclick="location.href='acc.html'"></button>
+
+	<div class="generator3000">
+		<h1 class="text_generator3000">Генератор3000</h1>
+	</div>
+
+	<div id="result">
+		<input class="input" type="text" placeholder="Результат" id="input" readonly>
+		<button class="copy" onclick="copy()"></button>
+	</div>
+
+	<div class="button_generate">
+		<button class="generate" onclick="generateValue()">Generate</button>
+	</div>
+
+
+
+	<!-- Фильтры для Password -->
+	<div id="filter-password" class="filters active">
+		<div class="filter-group">
+			<label class="number_password">Количество символов: <span id="length-value">12</span></label>
+			<input class="range" type="range" id="password-length" min="4" max="32" value="12"
+				oninput="document.getElementById('length-value').textContent = this.value">
+		</div>
+		<div class="filter-group">
+			<label class="p">Использовать символы:</label>
+			<div class="checkbox-group">
+				<label class="use"><input type="checkbox" id="use-uppercase" checked> A-Z</label>
+				<label class="use"><input type="checkbox" id="use-lowercase" checked> a-z</label>
+				<label class="use"><input type="checkbox" id="use-numbers" checked> 0-9</label>
+				<label class="use"><input type="checkbox" id="use-special" checked> !@#$%</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- Фильтры для Nickname -->
+	<div id="filter-nickname" class="filters">
+		<div class="filter-group">
+			<label class="p">Основа для никнейма (необязательно):</label>
+			<input type="text" id="nickname-base" placeholder="Например: Wolf">
+		</div>
+		<div class="filter-group">
+			<label class="checkbox"><input type="checkbox" id="nickname-numbers" checked>
+				<p class="p">Добавить цифры</p>
+			</label>
+		</div>
+	</div>
+
+	<!-- Фильтры для Number -->
+	<div id="filter-number" class="filters">
+		<div class="filter-group">
+			<label class="p">От:</label>
+			<input type="number" id="number-from" value="0">
+		</div>
+		<div class="filter-group">
+			<label class="p">До:</label>
+			<input type="number" id="number-to" value="1000000">
+		</div>
+	</div>
+
+	<!-- Фильтры для Coordinate -->
+	<div id="filter-coordinate" class="filters">
+		<div class="filter-group">
+			<label class="p">Материк:</label>
+			<select id="continent">
+				<option value="world">Весь мир</option>
+				<option value="europe">Европа</option>
+				<option value="asia">Азия</option>
+				<option value="africa">Африка</option>
+				<option value="north-america">Северная Америка</option>
+				<option value="south-america">Южная Америка</option>
+				<option value="australia">Австралия</option>
+				<option value="antarctica">Антарктида</option>
+			</select>
+		</div>
+	</div>
+
+	<!-- Фильтры для Date Ideas -->
+	<div id="filter-date" class="filters">
+		<p class="pi">Уникальные идеи для свиданий</p>
+	</div>
+
+	<script src="frontend/js/index.js"></script>
+
+</body>
+
+<body>
+
+	<!-- Кнопки выбора режима -->
+	<div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 20px;">
+		<button class="password" onclick="selectMode('password')">
+			<h1 class="text_password">Password</h1>
+
+		</button>
+		<button class="nickname" onclick="selectMode('nickname')">
+			<h1 class="text_nickname">Nickname</h1>
+
+		</button>
+
+		<button class="number" onclick="selectMode('number')">
+			<h1 class="text_number">Number</h1>
+
+		</button>
+
+		<button class="coordinate" onclick="selectMode('coordinate')">
+			<h1 class="text_coordinate">Coordinate</h1>
+
+		</button>
+
+		<button class="date_ideas" onclick="selectMode('date')">
+			<h1 class="text_date_ideas">Date Ideas</h1>
+
+		</button>
+	</div>
+
+</body>
+
+
+</html>
