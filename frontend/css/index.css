@@ -7,7 +7,6 @@
 
 body {
 	background: linear-gradient(135deg, #66eae3 0%, #864ba2 100%);
-	background-image: url('/frontend/image/bg.jpg');
 	background-size: state 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -317,4 +316,5 @@ body {
 	cursor: pointer;
 	border: 3px solid rgb(128, 21, 34);
 	border-radius: 5px;
+
 }
