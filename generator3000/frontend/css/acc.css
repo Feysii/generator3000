@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+* {
+
+	font-family: 'Mozilla Headline', sans-serif;
+}
+
+body {
+
+	background: linear-gradient(135deg, #e2acac 0%, #c28686 20%);
+	background: cover 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.history-title {
+	font-size: 32px;
+	color: yellow;
+	background: linear-gradient(135deg, #91017d 0%, #0004ff 100%);
+
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+}
+
+.back-btn {
+	padding: 10px 20px;
+	background: #0004ff 100%;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.back-btn:hover {
+	background: linear-gradient(135deg, #ff00dd 0%, #0004ff 100%);
+}
+
+.clear-btn {
+	padding: 10px 20px;
+	background: #0004ff 100%;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.clear-btn:hover {
+	background: linear-gradient(135deg, #ff00dd 0%, #0004ff 100%);
+	color: white;
+}
+
+.history-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.history-item {
+	background: lightskyblue;
+	color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border: 2px solid #e0e0e0;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.3s;
+}
+
+.history-item:hover {
+	box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
+	transform: translateY(-2px);
+}
+
+.history-info {
+	flex: 1;
+}
+
+.history-type {
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.type-password {
+	background: #ffecd2;
+	color: #d35400;
+}
+
+.type-nickname {
+	background: #a1c4fd;
+	color: #2980b9;
+}
+
+.type-number {
+	background: #fbc2eb;
+	color: #8e44ad;
+}
+
+.type-coordinate {
+	background: #fdcbf1;
+	color: #c0392b;
+}
+
+.type-date {
+	background: #fad0c4;
+	color: #e74c3c;
+}
+
+.history-value {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0;
+	word-break: break-all;
+}
+
+.history-date {
+	font-size: 12px;
+	color: #7f8c8d;
+}
+
+.history-actions {
+	display: flex;
+	gap: 10px;
+}
+
+.copy-btn {
+	padding: 8px 16px;
+	background: #3498db;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.copy-btn:hover {
+	background: #2980b9;
+}
+
+.delete-btn {
+	padding: 8px 16px;
+	background: #e74c3c;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.delete-btn:hover {
+	background: #c0392b;
+}
+
+.empty-message {
+	text-align: center;
+	padding: 60px 20px;
+	color: #95a5a6;
+	font-size: 20px;
+}
+
+.stats {
+	background: linear-gradient(135deg, #91017d 0%, #0004ff 100%);
+	color: yellow;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.stat-item {
+	text-align: center;
+	padding: 10px;
+}
+
+.stat-value {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.stat-label {
+	font-size: 14px;
+	opacity: 0.9;
+}
+
+.filters-bar {
+	background: linear-gradient(135deg, #91017d 0%, #0004ff 100%);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+}
+
+.filter-group label {
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+.filter-group select,
+.filter-group input[type="date"] {
+	padding: 8px 12px;
+	border: 2px solid #e0e0e0;
+	border-radius: 5px;
+	font-size: 14px;
+	min-width: 180px;
+}
+
+.filter-group select:focus,
+.filter-group input[type="date"]:focus {
+	outline: none;
+	border-color: #667eea;
+}
+
+.reset-filters-btn {
+	padding: 8px 16px;
+	background: linear-gradient(135deg, #ff9900 0%, #c90202 100%);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	height: 38px;
+}
+
+.reset-filters-btn:hover {
+	background: linear-gradient(135deg, #0004ff 0%, #91017d 100%);
+}
+
+.results-count {
+	background: linear-gradient(135deg, #91017d 0%, #0004ff 100%);
+	color: yellow;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-weight: bold;
+
+}

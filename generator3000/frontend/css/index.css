@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+* {
+
+	font-family: 'Mozilla Headline', sans-serif;
+}
+
+body {
+	background: linear-gradient(135deg, #66eae3 0%, #864ba2 100%);
+	background-image: url('/frontend/image/bg.jpg');
+	background-size: state 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.generator3000 {
+	background: linear-gradient(135deg, #66eae3 0%, #864ba2 100%);
+	border: 5px solid rgb(128, 21, 34);
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 70px auto;
+	height: 100px;
+	width: 600px;
+	max-width: 600px;
+	text-align: center;
+}
+
+.text_generator3000 {
+	color: rgb(210, 177, 30);
+	text-shadow: 5px 5px 10px rgb(122, 11, 33);
+	font-size: 65px;
+	line-height: 0.5;
+	text-align: center;
+
+}
+
+.acc {
+	right: 20px;
+	background-color: rgba(244, 95, 32, 1);
+	border: 3px solid rgb(85, 213, 191);
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+
+}
+
+.acc:hover {
+	background-color: rgba(85, 213, 191, 1);
+	border: 3px solid rgb(244, 95, 32);
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+#result {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+
+	background: linear-gradient(135deg, #fefff7 0%, #ff9901 100%);
+	border: 5px solid rgb(128, 21, 34);
+	height: 50px;
+	width: 650px;
+	border-radius: 50px;
+	color: rgb(128, 21, 34);
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+
+.button_generate {
+	align-items: center;
+	height: 30px;
+	width: 100px;
+	border-radius: 15px;
+	color: rgb(246, 212, 72);
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.password,
+.nickname,
+.number,
+.coordinate,
+.date_ideas {
+	display: flex;
+	flex-shrink: 0;
+	bottom: 20px;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #ff9900 0%, #c90202 100%);
+	color: rgb(246, 212, 72);
+	border: 3px solid rgb(128, 21, 34);
+	height: 70px;
+	width: 250px;
+	border-radius: 15px;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+.password:hover,
+.nickname:hover,
+.number:hover,
+.coordinate:hover,
+.date_ideas:hover {
+	background: linear-gradient(135deg, #ff00dd 0%, #0004ff 100%);
+	color: rgb(246, 212, 72);
+	border: 3px solid rgb(128, 21, 34);
+	height: 70px;
+	width: 250px;
+	cursor: pointer;
+
+}
+
+.copy {
+	background: linear-gradient(135deg, #ff00dd 0%, #0004ff 100%);
+	border: 3px solid rgb(128, 21, 34);
+	height: 25px;
+	width: 25px;
+	border-radius: 50px;
+
+}
+
+.copy:hover {
+	cursor: pointer;
+	background: linear-gradient(135deg, #ff9900 0%, #c90202 100%);
+	border: 3px solid rgb(128, 21, 34);
+	height: 25px;
+	width: 25px;
+
+}
+
+.button_generate {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+}
+
+.generate {
+	text-align: center;
+	background-color: rgba(85, 213, 191, 1);
+	border: 3px solid rgb(128, 21, 34);
+	height: 50px;
+	width: 150px;
+	border-radius: 50px;
+	color: rgb(255, 250, 205);
+	font-weight: bold;
+	font-size: 20px;
+	justify-content: center;
+	padding: 10px 20px;
+
+}
+
+.generate:hover {
+	background-color: rgba(85, 213, 191, 1);
+	color: rgb(246, 212, 72, 1);
+	border: 2px solid rgb(244, 95, 32, 1);
+	height: 51px;
+	width: 151px;
+	cursor: pointer;
+
+}
+
+.filters {
+	width: 600px;
+	height: 200px;
+	margin: 20px auto;
+	padding: 20px;
+	background: linear-gradient(135deg, #fefff7 0%, #ff9901 100%);
+	border: 3px solid rgb(128, 21, 34);
+	border-radius: 10px;
+	text-align: center;
+	display: none;
+}
+
+.filters.active {
+	display: block;
+}
+
+.filter-group {
+	margin-bottom: 15px;
+}
+
+.filter-group label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.filter-group input,
+.filter-group select {
+	ackground: linear-gradient(135deg, #c9f9ffdc 0%, #ff01ea6b 100%);
+	border: 5px solid rgb(128, 21, 34);
+	width: 100%;
+	padding: 8px;
+	border-radius: 50px;
+	color: rgb(128, 21, 34);
+	font-weight: bold;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.filter-group input,
+.filter-group select:hover {
+	background: linear-gradient(135deg, #c9f9ffdc 0%, #ff01ea6b 100%);
+	cursor: pointer;
+}
+
+.checkbox-group {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.checkbox-group label {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-weight: normal;
+	background: linear-gradient(#66eae3 0%, #a8a6a8 100%);
+	border: 3px solid rgb(128, 21, 34);
+}
+
+.active1 {
+	background: linear-gradient(135deg, #ff00dd 0%, #0004ff 100%);
+	color: rgb(246, 212, 72);
+	border: 3px solid rgb(128, 21, 34);
+	height: 70px;
+	width: 250px;
+	cursor: pointer;
+}
+
+.p {
+	font-size: 20px;
+	color: rgb(128, 21, 34);
+}
+
+.number_password {
+	font-size: 20px;
+	color: rgb(128, 21, 34);
+}
+
+#password-length {
+	width: 95%;
+	font-size: 20px;
+
+
+}
+
+#nickname-base {
+	text-align: center;
+	width: 95%;
+	font-size: 20px;
+	color: rgb(128, 21, 34);
+}
+
+#number-from,
+#number-to {
+	text-align: center;
+	font-size: 20px;
+	width: 95%;
+	color: rgb(128, 21, 34);
+}
+
+#continent {
+	color: rgb(128, 21, 34);
+	text-align: center;
+
+}
+
+.use {
+	font-size: 20px;
+	color: rgb(128, 21, 34);
+	width: 20%;
+	background-color: rgb(252, 228, 14);
+	border: 5px solid rgb(128, 21, 34);
+	border-radius: 50px;
+}
+
+
+.checkbox {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	size: 20px;
+}
+
+.pi {
+	font-size: 25px;
+	color: rgb(128, 21, 34);
+}
+
+.nickname-numbers {
+	font-size: 20px;
+	color: rgb(128, 21, 34);
+}
+
+#use-uppercase,
+#use-lowercase,
+#use-numbers,
+#use-symbols {
+	text-align: center;
+	width: 25px;
+	font-size: 20px;
+	height: 20px;
+	background-color: rgb(255, 250, 205);
+	cursor: pointer;
+	border: 3px solid rgb(128, 21, 34);
+	border-radius: 5px;
+}
